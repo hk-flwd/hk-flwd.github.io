@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+/*==========================
+detail
+==========================*/
+
+/* PC  */
+
+@media screen and (min-width:841px) {
+
+    .detail__title {
+        width: 127rem;
+        margin: 0 auto;
+        padding-top: 10rem;
+    }
+
+    .detail__type {
+        font-family: "Noto Sans JP";
+        font-size: 3.2rem;
+        line-height: 1;
+        color: var(--ash);
+    }
+
+    .detail__name {
+        font-family: "Noto Sans JP";
+        font-size: 4.8rem;
+        line-height: 1;
+        color: var(--olive);
+        padding-top: 2.5rem;
+    }
+
+    .link-icon {
+        width: 3rem;
+    }
+
+    .detail__responsible {
+        font-family: "Noto Sans JP";
+        font-size: 3.2rem;
+        line-height: 1;
+        color: var(--ash);
+        padding-top: 2.5rem;
+    }
+
+    .detail__textBox {
+        padding-top: 10rem;
+        width: 127rem;
+        margin: 0 auto;
+    }
+
+    .detail__subTopic {
+        box-sizing: border-box;
+        border-bottom: 1px var(--olive) solid;
+        padding: 0 1rem 1rem;
+    }
+
+    .detail__subTopic h4 {
+        font-family: "Noto Sans JP";
+        font-size: 2.4rem;
+        line-height: 1;
+        color: var(--olive);
+    }
+
+    .detail__text {
+        font-family: "Noto Sans JP";
+        font-size: 2rem;
+        line-height: 2;
+        color: var(--olive);
+        padding-top: 2.5rem;
+        padding-left: 1rem;
+    }
+
+    .detail__color {
+        display: flex;
+        width: 100rem;
+        margin: 5rem auto 0;
+        box-sizing: border-box;
+        border: 1px var(--gray) solid;
+    }
+
+    .detail__color p {
+        font-family: "Noto Sans JP";
+        font-size: 1.4rem;
+        line-height: 1;
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+
+    .detail__text--color {
+        padding-top: 5rem;
+    }
+}
+
+/* SP */
+
+@media screen and (min-width:0) and (max-width:840px) {
+
+    .detail__title {
+        width: 33rem;
+        padding-top: 4rem;
+        padding-left: 1rem;
+    }
+
+    .detail__type {
+        font-family: "Noto Sans JP";
+        font-size: 1.65rem;
+        line-height: 1;
+        color: var(--ash);
+    }
+
+    .detail__name {
+        font-family: "Noto Sans JP";
+        font-size: 1.65rem;
+        line-height: 1;
+        color: var(--olive);
+        padding-top: 1.67rem;
+    }
+
+    .link-icon {
+        width: 1.2rem;
+    }
+
+    .detail__responsible {
+        font-family: "Noto Sans JP";
+        font-size: 1.65rem;
+        line-height: 1.5;
+        color: var(--ash);
+        padding-top: 1.67rem;
+    }
+
+    .detail__textBox {
+        padding-top: 4rem;
+        width: 33rem;
+        margin: 0 auto;
+    }
+
+    .detail__subTopic {
+        box-sizing: border-box;
+        border-bottom: 1px var(--olive) solid;
+        padding: 0 0.5rem 0.5rem;
+    }
+
+    .detail__subTopic h4 {
+        font-family: "Noto Sans JP";
+        font-size: 1.4rem;
+        line-height: 1;
+        color: var(--olive);
+    }
+
+    .detail__text {
+        font-family: "Noto Sans JP";
+        font-size: 1.2rem;
+        line-height: 2;
+        color: var(--olive);
+        padding-top: 1rem;
+        width: 32rem;
+        margin: 0 auto;
+    }
+
+    .detail__color {
+        display: flex;
+        width: 32rem;
+        margin: 2rem auto 0;
+        box-sizing: border-box;
+        border: 1px var(--gray) solid;
+    }
+
+    .detail__color p {
+        font-family: "Noto Sans JP";
+        font-size: 0.6rem;
+        line-height: 1;
+        padding-top: 0.32rem;
+        padding-left: 0.32rem;
+    }
+
+    .detail__text--color {
+        padding-top: 2rem;
+    }
+}
+
+/*==========================
+slick
+==========================*/
+
+/* PC  */
+
+@media screen and (min-width:841px) {
+
+    .slider-pc {
+        width: 142rem;
+        height: 54rem;
+        margin: 10rem auto 0;
+    }
+
+    .key-slider,.slick-list,.slick-track {
+        height: 100%;
+    }
+
+    .slider__item {
+        width: 101rem;
+        height: 54rem;
+        background-color: var(--ash);
+        margin: 0 2.5rem;
+    }
+
+    .slider__item img {
+        width: 100%;
+    }
+
+}
+
+/* SP */
+
+@media screen and (min-width:0) and (max-width:840px) {
+
+    .slider-sp {
+        width: 33.2rem;
+        height: 17.74rem;
+        margin: 4rem auto 0;
+    }
+
+    .key-slider,.slick-list,.slick-track {
+        height: 100%;
+    }
+
+    .slider__item {
+        width: 33rem;
+        height: 17.64rem;
+        background-color: var(--ash);
+    }
+
+    .slider__item img {
+        width: 100%;
+    }
+}
