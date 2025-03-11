@@ -23,17 +23,43 @@ mainVisual
 @media screen and (min-width:841px) {
 
     .mainVisual {
+        height: 100vh;
         position: relative;
         width: calc(167rem - calc(100vw - 100%));
         transform: translateX(calc(100vw - 167rem));
     }
 
-    .mainVisual--kari {
-        height: 100vh;
-        background-color: var(--gray);
+    .mainVisual--bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        opacity: 0;
+        transition: 1.2s;
     }
 
-    .mainVisual h1 {
+    .mainVisual--bg img {
+        height: 100vh;
+        width: 167rem;
+        object-fit: cover;
+    }
+
+    .mainVisual--top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        opacity: 0;
+        transition: 1.2s;
+    }
+
+    .mainVisual--top img {
+        height: 100vh;
+        width: 167rem;
+        object-fit: cover;
+    } 
+
+    .mainVisual--title {
         font-family: "Noto Serif JP";
         font-size: 10rem;
         line-height: 2.5;
@@ -44,6 +70,10 @@ mainVisual
         left: 12.5rem;
         top: 50%;
         transform: translateY(-50%);
+        z-index: 100;
+        opacity: 0;
+        transition: 1.2s;
+        text-shadow: black 0.2rem 0 2rem;
     }
 
 }
@@ -53,15 +83,41 @@ mainVisual
 @media screen and (min-width:0) and (max-width:840px) {
 
     .mainVisual {
+        height: 100vh;
         position: relative;
     }
 
-    .mainVisual--kari {
-        height: 100vh;
-        background-color: var(--gray);
+    .mainVisual--bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        opacity: 0;
+        transition: 1.2s;
     }
 
-    .mainVisual h1 {
+    .mainVisual--bg img {
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+    }
+
+    .mainVisual--top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        opacity: 0;
+        transition: 1.2s;
+    }
+
+    .mainVisual--top img {
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+    } 
+
+    .mainVisual--title {
         font-family: "Noto Serif JP";
         font-size: 4rem;
         line-height: 2.5;
@@ -71,8 +127,12 @@ mainVisual
         position: absolute;
         width: 39rem;
         left: 50%;
-        top: 7rem;
+        top: 5rem;
         transform: translateX(-50%);
+        z-index: 100;
+        opacity: 0;
+        transition: 1.2s;
+        text-shadow: black 0.1rem 0 1rem;
     }
 
 }
@@ -263,10 +323,9 @@ about
         margin: 0 auto;
     }
 
-    .about__img--kari {
+    .about__img {
         height: 60rem;
         width: 45rem;
-        background-color: var(--ash);
     }
 
     .about__textBox {
@@ -316,10 +375,9 @@ about
         margin: 0 auto;
     }
 
-    .about__img--kari {
+    .about__img {
         height: 24rem;
         width: 18rem;
-        background-color: var(--ash);
         margin: 0 auto;
     }
 

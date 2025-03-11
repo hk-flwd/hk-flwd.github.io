@@ -16,6 +16,14 @@
 
     });
 
+
+    // loading
+    $('.mainVisual--bg').addClass('animated');
+
+    $('.mainVisual--top, .mainVisual--title').delay(700).queue(function(){
+        $(this).addClass('animated').dequeue();
+    })
+
     // item fadeIn
     $(window).on('load scroll', function(){
 
@@ -30,7 +38,9 @@
                 $(this).addClass('animated');
 
             }
+
         });
+
     });
 
     // slick
